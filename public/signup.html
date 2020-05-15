@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+
+<style>
+    @media only screen and (max-width: 400px) {
+        #signup-form {
+
+            display: inline-block;
+            padding: 10px;
+        }
+
+        #signup-form input {
+            margin: 5px;
+            position: absolute;
+            right: 50px;
+        }
+
+        #signup-button {
+            position: absolute;
+            right:50px;
+        }
+    }
+</style>
+<body>
+    <div id="header">
+        <div id="logo">
+            logo
+        </div>
+        <div id="page-name">Sign up Form</div>
+    </div>
+    <div id="signup-form">
+        Display Name: <input type="text" name="username" id="usernameInput"><br><br>
+        Email: <input type="email" name="email" id="emailInput"><br><br>
+        New Password: <input type="password" name="newPassword" id="newPasswordInput"><br><br>
+        Retype Password: <input type="password" name="rePassword" id="rePasswordInput"><br><br>
+        <button id="signup-button">Signup!</button>
+    </div>
+</body>
+
+</html>

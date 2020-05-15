@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    border-radius: 10px;
+    border: 1px solid black;
+    z-index: 10;
+    width: 85%;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    max-width: 90%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    overflow: scroll;
+}
+
+.modal-header {
+    padding: 10px, 15px, 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    right: 5px;
+    margin: 10px;
+}
+
+.modal-body {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.modal-body li {
+    padding: 10px 10px;
+    list-style: circle;
+    color: royalblue;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+[data-modal-target] {
+    position: fixed;
+    padding: 0;
+    top: 40px;
+    border-right: 5px inset orangered;
+    border-radius: 50%;
+    background: transparent;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#signup-btn {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 50px;
+    border-right: 5px inset orangered;
+    border-radius: 10px;
+    background: transparent;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+}

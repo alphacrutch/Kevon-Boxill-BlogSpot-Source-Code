@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+
+    </div>
+    <div id="box2">
+        <input type="number" name="input" id="numberinput">
+        <input type="number" name="input" id="numberinput2">
+        <button id="btnsum">+</button>
+        <button id="btnminus">-</button>
+    </div>
+    <script type="text/javascript">
+        let answerBox = document.getElementById("box");
+        let input1 = document.getElementById("numberinput");
+        let input2 = document.getElementById("numberinput2");
+        let btnSum = document.getElementById("btnsum");
+        let btnMinus = document.getElementById("btnminus");
+
+        function Sum() {
+            let inputInfo1 = input1.value;
+            let inputInfo2 = input2.value;
+            let sum =parseInt(inputInfo1) + parseInt(inputInfo2);
+            answerBox.innerText = sum;
+        }
+        function Minus() {
+            let inputInfo1 = input1.value;
+            let inputInfo2 = input2.value;
+            let sum =parseInt(inputInfo1) - parseInt(inputInfo2);
+            answerBox.innerHTML = sum;
+            
+        }   
+
+        btnSum.addEventListener('click', Sum);
+        btnMinus.addEventListener('click', Minus);
+    </script>
+    <style>
+        #box {
+            background-color: aqua;
+            position: absolute;
+            left: 250px;
+            color: goldenrod;
+            border: black 1px solid;
+            width: 100px;
+            height: 200px;
+            text-align: center;
+            padding: 20px; 
+        }
+
+        #box2 {
+
+            color: red;
+            border: black 1px solid;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            padding: 20px;
+
+        }
+    </style>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+ /*
+ Imported css font rules
+
+    font-family: 'Bangers', cursive;
+
+    font-family: 'Lobster', cursive;
+
+
+
+ */
+ 
+ @media only screen and (max-width:768px) {
+     /*
+Fixed values
+*/
+     * {
+         font-weight: 400;
+         font-family: 'Lobster', cursive;
+         padding: 0;
+         margin: 0;
+     }
+     a {
+         text-decoration: none;
+     }
+     #header {
+         position: fixed;
+         width: 100%;
+         height: 70px;
+         background-color: rgb(227, 236, 96);
+         z-index: 7;
+     }
+     #header-title {
+         position: absolute;
+         left: 10px;
+         padding: 0;
+         top: 5px;
+         font-size: 1.35rem;
+     }
+     .menu-wrapper {
+         position: absolute;
+         right: 10px;
+     }
+     #interface {
+         padding: 10px;
+         z-index: 1;
+         position: relative;
+         /* border: rgb(227, 236, 96) 4px solid;*/
+         top: 60px;
+         width: 97.7%;
+         min-height: 680px;
+         max-height: max-content;
+     }
+     #blog {
+         padding: 5px;
+         height: 300px;
+         width: 90%;
+         border: grey 1px ridge;
+         overflow: scroll;
+     }
+     /*
+Interface Images for different pages
+*/
+     #interface-top-img {
+         background-image: url('/media/images/top-img.png');
+         background-size: 100%, 100%;
+         max-width: 99%;
+         height: 200px;
+         position: relative;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     #interface-img-blog {
+         background-image: url('/media/images/Blogging-PNG.png');
+         background-size: 100%, 100%;
+         height: 200px;
+         background-position: center;
+         max-width: 99%;
+         position: relative;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     #interface-img-aboutme {
+         background-image: url('/media/images/kbmain2.png');
+         background-size: 100%, 100%;
+         background-position: initial;
+         height: 275px;
+         position: relative;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     #blog-img {
+         background-image: url('/media/images/yessimg.jpg');
+         height: 50px;
+         width: 100px;
+         background-size: 100%, 100%;
+         background-position: center;
+         position: relative;
+         float: right;
+         margin-right: 10px;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     .fb-icon {
+         background-image: url('/media/images/fb-icon.png');
+         height: 50px;
+         width: 50px;
+         background-size: 100%, 100%;
+         background-position: center;
+         position: relative;
+         margin-right: 10px;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     .email-icon {
+         background-image: url('/media/images/email-icon.png');
+         height: 60px;
+         width: 60px;
+         background-size: 100%, 100%;
+         background-position: center;
+         position: relative;
+         background-repeat: no-repeat;
+         margin-right: 10px;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+        /*
+Interface Videos for different pages
+*/
+video {
+    width:100%;
+    height: 200px;
+}
+     /*
+Interface Body and conten for different pages 
+*/
+     /* Body*/
+     #interface-body {
+         position: relative;
+         display: flexbox;
+         padding: 10px;
+     }
+     /* Titles*/
+     #interface-body .title {
+         position: relative;
+         font-size: 1.5rem;
+         text-align: center;
+         font-weight: bold;
+         padding-bottom: 10px;
+         border-bottom: rgb(227, 236, 96) 5px groove;
+         border-radius: 20px;
+         width: max-content;
+     }
+     .page-tile {
+         width: 200px;
+         left: 120px;
+     }
+     .contact-title {
+         left: 80px;
+     }
+     #blog-name {
+         text-align: center;
+         left: 50px;
+     }
+     #blog-day {
+         left: 100px;
+     }
+     .blog-p {
+         padding: 10px;
+         text-align: justify;
+         font-family: cursive;
+         font-size: 18px;
+     }
+     #interface-body .p1 {
+         font-size: 1.3rem;
+         padding: 10px;
+         text-align: justify;
+     }
+     /* Links contact info*/
+     .fb-link {
+         margin-top: 20px;
+         margin-right: 20px;
+         margin-bottom: 20px;
+         position: relative;
+         width: 97%;
+         font-size: 1.5rem;
+         display: inline-flex;
+     }
+     .fb-link a:hover {
+         position: relative;
+         float: right;
+         transform: scale(1.1, 1.1);
+     }
+     .email-link {
+         margin-top: 20px;
+         margin-right: 20px;
+         margin-bottom: 20px;
+         position: relative;
+         width: 97%;
+         font-size: 1.5rem;
+         display: inline-flex;
+     }
+     .email-link a:hover {
+         position: relative;
+         float: right;
+         transform: scale(1.1, 1.1);
+     }
+ }
+ 
+ @media only screen and (min-width:1200px) {
+     /*
+Fixed values
+*/
+     * {
+         padding: 0;
+         margin: 0;
+     }
+     a {
+         text-decoration: none;
+     }
+     .inline {
+         display: inline;
+     }
+     .inlineblock {
+         display: inline-block;
+     }
+     #header {
+         position: fixed;
+         width: 100%;
+         height: 70px;
+         background-color: rgb(227, 236, 96);
+         z-index: 7;
+     }
+     #header-title {
+         position: absolute;
+         left: 10px;
+         padding: 0;
+         top: 5px;
+         font-size: 1.35rem;
+     }
+     .menu-wrapper {
+         position: absolute;
+         right: 10px;
+     }
+     #interface {
+         z-index: 1;
+         margin-left: 1px;
+         position: relative;
+         top: 60px;
+         width: 100%;
+         min-height: 850px;
+         max-height: max-content;
+     }
+     #blog {
+         padding: 5px;
+         height: 300px;
+         width: 50%;
+         border: grey 1px ridge;
+         overflow: scroll;
+     }
+     /*
+Interface Images for different pages
+*/
+     #interface-top-img {
+         background-image: url('/media/images/top-img.png');
+         background-size: 100%, 100%;
+         max-width: 100%;
+         background-position: center;
+         height: 400px;
+         position: relative;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     #interface-img-blog {
+         background-image: url('/media/images/Blogging-PNG.png');
+         background-size: 100%, 100%;
+         height: 250px;
+         background-repeat: no-repeat;
+         background-position: center;
+         width: 400px;
+         position: relative;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     #interface-img-aboutme {
+         background-image: url('/media/images/kbmain2.png');
+         background-size: 100%, 100%;
+         background-position: center;
+         height: 400px;
+         width: 300px;
+         float: left;
+         background-repeat: no-repeat;
+         position: relative;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     #blog-img1 {
+         background-image: url('/media/images/yessimg.jpg');
+         height: 50px;
+         width: 100px;
+         background-size: 100%, 100%;
+         background-position: center;
+         position: relative;
+         float: right;
+         margin-right: 10px;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     .fb-icon {
+         background-image: url('/media/images/fb-icon.png');
+         height: 50px;
+         width: 50px;
+         background-size: 100%, 100%;
+         background-position: center;
+         position: relative;
+         margin-right: 10px;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     .email-icon {
+         background-image: url('/media/images/email-icon.png');
+         height: 60px;
+         width: 60px;
+         background-size: 100%, 100%;
+         background-position: center;
+         position: relative;
+         background-repeat: no-repeat;
+         margin-right: 10px;
+         border: rgb(227, 236, 96) 1px solid;
+         z-index: 1;
+     }
+     /*
+Interface Body and conten for different pages 
+*/
+     /* Body*/
+     #interface-body {
+         float: inline-start;
+         position: relative;
+         padding: 10px;
+     }
+     /* Titles*/
+     #interface-body .title {
+         position: relative;
+         font-size: 1.5rem;
+         text-align: center;
+         font-weight: bold;
+         left: 40%;
+         padding-bottom: 10px;
+         border-bottom: rgb(227, 236, 96) 5px groove;
+         border-radius: 20px;
+         width: max-content;
+     }
+     .page-tile {
+         width: 200px;
+         left: 120px;
+     }
+     .contact-title {
+         left: 80px;
+     }
+     #blog-name {
+         text-align: center;
+         left: 50px;
+     }
+     #blog-day {
+         left: 100px;
+     }
+     .blog-p {
+         font-family: cursive;
+     }
+     #interface-body .p1 {
+         font-size: 1.2rem;
+         padding: 10px;
+         text-align: justify;
+     }
+     /* Buttons */
+     #dev-btn {
+         position: absolute;
+         left: 5px;
+         bottom: 5px;
+     }
+     /* Links contact info*/
+     .fb-link {
+         margin-top: 20px;
+         margin-right: 20px;
+         margin-bottom: 20px;
+         position: relative;
+         width: 97%;
+         font-size: 1.5rem;
+         display: inline-flex;
+     }
+     .fb-link a:hover {
+         position: relative;
+         float: right;
+         transform: scale(1.1, 1.1);
+     }
+     .email-link {
+         margin-top: 20px;
+         margin-right: 20px;
+         margin-bottom: 20px;
+         position: relative;
+         width: 97%;
+         font-size: 1.5rem;
+         display: inline-flex;
+     }
+     .email-link a:hover {
+         position: relative;
+         float: right;
+         transform: scale(1.1, 1.1);
+     }
+ }

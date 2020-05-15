@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/menus.css">
+    <link rel="stylesheet" href="/css/modals.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&display=swap" rel="stylesheet">
+    <title>K.Boxill's Blog Spot</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.14.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.14.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.14.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.14.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.14.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>    
+  </head>
+  <body>
+    <div id="header">
+        <div id="header-title"> <a href="index.html">Dev Blog Spot K.B. </a> </div>
+        <div class="menu-wrapper">
+            <div class="dropdown">
+                <button class="dropbtn">menu</button>
+                <div class="dropdown-content">
+                    <a href="aboutMeTemplate.html">About Me</a>
+                    <a href="My_Blog.html">My Blog</a>
+                    <a href="contactIinfo.html">Contact Info</a>
+                    <div class="dropdown-projects">
+                        <a class="dropbtn-projects">Projects</a>
+                        <div class="dropdown-content-projects">
+                            <a href="https://recipetable-3f225.web.app/">Recipe Table</a>
+                            <a href="https://all-fours-card-game.web.app/">All Fours Game</a>
+                            <a href="comment.html">Comments</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button data-modal-target="#modal">--dev--notes</button>
+    </div>    
+    <div id="interface">
+        <div id="interface-top-img"></div>
+        <div id="interface-body">
+            <video src="/media/videos/firstvlog.mp4" autoplay controls >
+            </video> 
+            <div class="title">Welcome To K.B Blog SPot</div>
+            <p class="p1">Welcome to my blog spot. MY name is Kevon Boxill. This blog spot was created mainly for the purpose of posting my progress while doing a <i> 100 day coding challenge</i>. The projects I will be working on will be my personal web projects as
+                well as this blog. Links to the projects will be provided as I go through the
+                <i>coding challenge</i>. </p>
+            <p class="p1">This blog will be updated daily. Feel Free to check on my progess and read the dev notes on upcoming features that will be added to my blog post.
+            </p>
+        </div>
+    </div>  
+
+    <div id="modal" class="modal">
+        <div class="modal-header">
+            <div class="title">Dev Notes and Feature updates</div>
+            <button data-close-button class="close-button"> &times;</button>
+        </div>
+        <div class="modal-body">
+            <video src="/media/videos/firstvlog.mp4" autoplay controls>
+            </video>   
+            <ul>
+                <li>
+                    Comments page in progress not saving data to be shown on refresh yet.
+                </li>
+                <li>
+                    The Recipe table project is live atm for viewing. I am still working on an Authentication feature for the the Recipe Table Project. As it stands viewers are able to create a custom account with an email and password or sign up with their Gmail Accounts.
+                </li>
+                <li>
+                    The All Fours Project will take a while to be published as game projects have alot of moving parts that need to be properly synced to run efficiently. Also the All Fours project was designed for a Big Screen like a PC or Laptop. So even if it were to
+                    be launched it will be ugly to look at on smaller devices.
+                </li>
+                <li>
+                    Still working on a realtime comment board for you viewers to post your opinions.
+                </li>
+                <li>
+                    Still to come is an authentication system for this site to personalise viewer comments. Also this will serve to denied or allow viewer access to certain features on the site such all commenting and realTime messaging
+                </li>
+                <li>
+                    I also would like to expand this site to a public Blog sit where anyone can create a blog and post it to a blog forum or just a personal blog profile. What you guys think?
+                </li>
+            </ul>
+            <P>
+            </P>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+
+</body>
+<script src="/js/features.js"></script>
+</html>

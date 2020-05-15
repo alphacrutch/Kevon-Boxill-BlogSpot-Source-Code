@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/modals.css">
+    <link rel="stylesheet" href="/css/menus.css">
+    <title>K.Boxill's Blog Spot</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.14.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.14.2/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/7.14.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.14.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.14.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.14.2/firebase-storage.js"></script>
+    <script defer src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-title"> <a href="index.html">Dev Blog Spot K.B. </a> </div>
+        <div class="menu-wrapper">
+            <div class="dropdown">
+                <button class="dropbtn">menu</button>
+                <div class="dropdown-content">
+                    <a href="aboutMeTemplate.html">About Me</a>
+                    <a href="My_Blog.html">My Blog</a>
+                    <a href="contactIinfo.html">Contact Info</a>
+                    <div class="dropdown-projects">
+                        <a class="dropbtn-projects">Projects</a>
+                        <div class="dropdown-content-projects">
+                            <a href="https://recipetable-3f225.web.app/">Recipe Table</a>
+                            <a href="https://all-fours-card-game.web.app/">All Fours Game</a>
+                            <a href="comment.html">Comments</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button data-modal-target="#modal">--dev--notes</button>
+    </div>
+    </div>
+    <div id="interface" class="inline">
+        <div id="interface-img-aboutme"></div>
+        <div id="interface-body">
+            <div class="title">About Me</div>
+            <blockquote class="p1">
+                My name is <i>Kevon Boxill </i> and I am a <i>self-taught</i> Software Developer. I started this journey about over a year ago. I have always been an avid follower of the computer arts but would always be to afraid to dive into computer
+                programming.
+                <br> I had the notion that it would be filled with 1's and 0's, but to my surprise it was totally easy. I am always looking for new knowledge and ways to expand my knowledge.
+            </blockquote>
+            <blockquote class="p1">
+                Althought I am and will always still be on my journey to becoming an internationally recognised Software Developer, looking back on my progress, I feel proud to call myself a software developer. I am presently persueing and developing my web development
+                skills, to better bolster my portfolio as i throw myself into the web-dev forest.
+
+            </blockquote>
+            <p class="p2"></p>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-header">
+            <div class="title">Dev Notes and Feature updates</div>
+            <button data-close-button class="close-button"> &times;</button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>
+                    Comments page in progress not saving data to be shown on refresh yet.
+                </li>
+                <li>
+                    The Recipe table project is live atm for viewing. I am still working on an Authentication feature for the the Recipe Table Project. As it stands viewers are able to create a custom account with an email and password or sign up with their Gmail Accounts.
+                </li>
+                <li>
+                    The All Fours Project will take a while to be published as game projects have alot of moving parts that need to be properly synced to run efficiently. Also the All Fours project was designed for a Big Screen like a PC or Laptop. So even if it were to
+                    be launched it will be ugly to look at on smaller devices.
+                </li>
+                <li>
+                    Still working on a realtime comment board for you viewers to post your opinions.
+                </li>
+                <li>
+                    Still to come is an authentication system for this site to personalise viewer comments. Also this will serve to denied or allow viewer access to certain features on the site such all commenting and realTime messaging
+                </li>
+                <li>
+                    I also would like to expand this site to a public Blog sit where anyone can create a blog and post it to a blog forum or just a personal blog profile. What you guys think?
+                </li>
+            </ul>
+            <P>
+            </P>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+
+
+
+</body>
+<script src="/js/features.js"></script>
+
+</html>

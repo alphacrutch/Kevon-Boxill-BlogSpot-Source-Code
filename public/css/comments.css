@@ -1,0 +1,51 @@
+#comments {
+    overflow: scroll;
+    padding: 5px;
+    border: 1px inset black;
+    height: 350px;
+}
+
+#comment-input-wrapper {
+    padding: 5px;
+    max-height: max-content;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    border: 1px inset black;
+    position: relative;
+}
+
+#author-input {
+    position: relative;
+}
+
+#comment-input {
+    margin-top: 5px;
+    overflow: scroll;
+    overflow-wrap: break-word;
+    max-height: max-content;
+    position: relative;
+}
+
+#post-btn {
+    top: 40px;
+    position: relative;
+    float: inline-end;
+    height: 20px;
+    width: 45px;
+}
+
+#comment h4 {
+    color: rgb(73, 75, 70);
+}
+
+#avatarInput {
+    position: absolute;
+    height: 60px;
+    width: 50px;
+    right: 5px;
+    background-image: url('/media/images/noavatar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

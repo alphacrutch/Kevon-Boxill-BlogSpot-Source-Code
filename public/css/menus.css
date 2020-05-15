@@ -1,0 +1,140 @@
+/* Style The Dropdown Button */
+
+.dropbtn {
+    height: 35px;
+    width: 60px;
+    background: transparent;
+    color: rgb(41, 61, 179);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    clear: both;
+    right: 0px;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: rgb(227, 236, 96);
+    pointer-events: all;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+/*
+|
+|Projects Menu Drop down
+|
+*/
+
+.dropbtn-projects {
+    height: 35px;
+    width: 95%;
+    background: transparent;
+    color: rgb(41, 61, 179);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown-projects {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content-projects {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    clear: both;
+    right: 0px;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content-projects a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: max-content;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content-projects a:hover {
+    background-color: rgb(227, 236, 96);
+    pointer-events: all;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown-projects:hover .dropdown-content-projects {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown-projects:hover .dropbtn-projects {
+    background-color: rgb(227, 236, 96);
+}
